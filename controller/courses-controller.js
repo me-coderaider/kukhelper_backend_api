@@ -118,7 +118,7 @@ const updateCourse = async (req, res, next) => {
     await course.save();
   } catch (err) {
     const error = new HttpError(
-      "Something went wrong, could not update the place",
+      "Something went wrong, could not update the course.",
       500
     );
     return next(error);
